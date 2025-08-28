@@ -1,4 +1,14 @@
-import express from 'express';
+/*
+! Runtime entry point of the application
+*/
 
-const app = express();
-const port = 3000;
+// Import environment variables from .env file
+import app from "./app.js";
+
+const PORT = Number(process.env.PORT ?? 3000);
+
+if (process.env.NODE_ENV !== "test") {
+  app.listen(PORT, () =>
+    console.log(`Server is running at http://localhost:${PORT}`)
+  );
+}
