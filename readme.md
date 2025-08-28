@@ -2,6 +2,9 @@
 
 A minimal HTTP service that decides whether to send a user notification based on event type and a Do‑Not‑Disturb (DND) window. Built with Express, TypeScript, and zero database (in‑memory store).
 
+[![CI](https://github.com/SculptTechProject/Cleeng-dnd-Mateusz-Dalke/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/SculptTechProject/Cleeng-dnd-Mateusz-Dalke/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/SculptTechProject/Cleeng-dnd-Mateusz-Dalke?sort=semver)](https://github.com/SculptTechProject/Cleeng-dnd-Mateusz-Dalke/releases)
+
 ---
 
 ## Highlights
@@ -17,7 +20,7 @@ A minimal HTTP service that decides whether to send a user notification based on
 
 ## Configuration
 
-Enviroment variables:
+Environment variables:
 
 - `PORT` - server port (default `3000`)
 - `API_PREFIX` - base path prefix (default (/api/v1).
@@ -26,7 +29,7 @@ Enviroment variables:
 Example `.env`:
 
 ```bash
-PORT 3000
+PORT=3000
 # API base path prefix. Defaults to /api/v1 when unset.
 # Leave empty to expose unprefixed routes:
 # API_PREFIX=
