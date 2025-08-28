@@ -2,7 +2,7 @@
 ! Runtime entry point of the application
 */
 
-// Import environment variables from .env file
+// App entry point
 import app from "./app.js";
 
 const PORT = Number(process.env.PORT ?? 3000);
